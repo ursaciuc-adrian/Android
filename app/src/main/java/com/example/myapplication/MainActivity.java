@@ -57,6 +57,13 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.action_sensors) {
+            Intent myIntent = new Intent(MainActivity.this, Sensors.class);
+            MainActivity.this.startActivity(myIntent);
+
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
