@@ -64,6 +64,13 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.action_photo) {
+            Intent myIntent = new Intent(MainActivity.this, TakePhotoActivity.class);
+            MainActivity.this.startActivity(myIntent);
+
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
